@@ -385,10 +385,11 @@
 
 \pgfkeys{
     /background/.is family, /background,
-    default/.style = {scale = 1.0,color=white,caption=\empty,page=1},
+    default/.style = {scale = 1.0,color=white,caption=\empty,footnote=\empty,page=1},
     scale/.estore in = \bgScale,
     color/.estore in = \bgColor,
     caption/.estore in = \bgCaption,
+    footnote/.estore in = \bgFootnote,
     page/.estore in = \bgPage,
 }
 
@@ -427,8 +428,13 @@
         \ifdefequal{\bgCaption}{\empty}{%
         }{%
             \begin{tikzpicture}[remember picture,overlay]
-                \node at (-1, -4.5) [anchor=south west,shape=rectangle,fill=hriSec3Dark, opacity=0.7, align=right, text width=0.6\paperwidth]
-                {\usebeamerfont{subtitle}\usebeamercolor[bg]{subtitle}\bgCaption\par};
+                \node at (-1, -4.5) [anchor=south west,shape=rectangle,fill=hriSec3Dark, opacity=0.7, align=right, text width=0.6\paperwidth] {\usebeamerfont{subtitle}\usebeamercolor[bg]{subtitle}\bgCaption\par};
+            \end{tikzpicture}
+        }%
+        \ifdefequal{\bgFootnote}{\empty}{%
+        }{%
+            \begin{tikzpicture}[remember picture,overlay]
+                \node at (current page.south west) [anchor=south west,shape=rectangle,fill=white, opacity=0.7, align=left, text width=\paperwidth]{\usebeamerfont{institute}\usebeamercolor[fg]{institute}\bgFootnote\par};
             \end{tikzpicture}
         }%
     \end{frame}
