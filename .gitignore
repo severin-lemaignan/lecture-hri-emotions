@@ -1,0 +1,45 @@
+build/
+exams/
+.minted*
+_minted*
+*.nav
+*.snm
+*.toc
+*.out
+*.log
+*.aux
+*.bbl
+*.synctex.gz
+
+figs-lowres/
+tony*
+*.docx
+*.pptx
+
+*.xml
+*.rels
+
+*.orig
+*.BASE*
+*.REMOTE*
+*.LOCAL*
+*.BACKUP*
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+.classpath
+.project
+
+*.html
+*.applet
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
