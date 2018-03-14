@@ -1,7 +1,7 @@
 
 LATEX=lualatex
 
-TEXTARGETS=$(wildcard *.tex)
+TEXTARGETS=$(wildcard emotions.tex)
 
 TARGET=$(TEXTARGETS:.tex=.pdf)
 

@@ -19,11 +19,6 @@
 \usepackage{tabularx,ragged2e}
 \usepackage{booktabs}
 
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-
 \usetheme{hri}
 
 % Display the navigation bullet even without subsections
@@ -128,14 +123,235 @@ This week, we are looking at the automatic processing of emotions:
 
 \section{Models of emotion}
 
-\begin{frame}{Ekman model}
-    6 primitive emotions
+\begin{frame}{Paul Ekman and basic emotions}
+
+\href{https://en.wikipedia.org/wiki/Paul_Ekman}{Paul Ekman}, a
+psychologist, found that when shown facial expressions people across the
+world all recognised six \textbf{basic emotions}.
+
+    \only<1>{
+    \begin{center}
+        \includegraphics[width=0.55\linewidth]{ekman_6_basic_emotions}
+
+        \source{http://emotionresearcher.com/}{emotionresearcher.com}
+    \end{center}
+}
+
+\pause
+
+\begin{center}
+\textbf{Anger, disgust, fear, happiness, sadness and surprise}.
+\end{center}
+
+Some other emotion are less universally recognised, e.g.~contempt.
+
+\pause 
+In 1990 Ekman extended his list of basic emotion to include other
+emotions: \emph{Amusement, contempt, contentment, embarrassment, excitement, guilt,
+  pride in achievement, relief, satisfaction, sensory pleasure, and
+    shame}
+
+
 \end{frame}
 
+
+\begin{frame}{Emotion and machines}
+
+    \only<1-2>{
+        {\bf Computer and robots should be able to read emotions}
+
+    \begin{itemize}
+        \item This is crucial in understanding the social world around the robot and
+            responding appropriately.
+        \item This has a large number of applications, e.g.
+            \href{https://en.wikipedia.org/wiki/Sentiment_analysis}{sentiment
+            analysis} to predict what the
+            \href{http://arxiv.org/PS_cache/arxiv/pdf/1010/1010.3003v1.pdf}{stock
+            market will do based on emotional content of tweets}.
+    \end{itemize}
+
+    \pause
+
+    {\bf Should machines express emotions?}
+
+    \begin{itemize}
+
+        \item Due to the \href{https://en.wikipedia.org/wiki/The_Media_Equation}{\bf
+            media equation} we cannot help attributing emotions to
+            robots and other technology.
+        \item As we expect machines to express emotions, it would be good as a robot
+            designer to take control of the unconscious attribution of emotion by
+            the user.
+        \item + cf Serge's slides
+    \end{itemize}
+
+}
+    \only<3>{
+        {\bf Why would representing emotion be useful?}
+
+    \begin{itemize}
+
+        \item You can model the emotional state of the user and respond
+            appropriately. For example, the user is bored, if the robot knows this
+            it can do something to entertain the user.
+        \item You can use a model to let the robot express emotions. For example,
+            this can be used for ``emotion contagion''. If the robot is happy,
+            this will influence how the user feels.
+    \end{itemize}
+}
+\end{frame}
+
+\begin{frame}{How to represent emotions?}
+
+\only<1-4>{
+    Several approaches (or {\bf models}):
+}
+
+\only<1-2>{
+ON/OFF approach to basic emotions:
+
+\begin{itemize}
+
+\item Anger : ON/OFF
+\item Disgust : ON/OFF
+\item Fear : ON/OFF
+\item Happiness : ON/OFF
+\item Sadness : ON/OFF
+\item Surprise : ON/OFF
+\end{itemize}
+
+Why is this a poor approach to representing emotion?
+
+\pause
+
+$\Rightarrow$ no representation of gradual emotions; all is just ``on'' or
+``off''
+}
+\only<3-4>{
+
+
+Gradual representation of emotion would be better:
+
+\begin{itemize}
+
+\item Anger : {[}0; 1{]}
+\item Disgust : {[}0; 1{]}
+\item Fear : {[}0; 1{]}
+\item Happiness : {[}0; 1{]}
+\item Sadness : {[}0; 1{]}
+\item Surprise : {[}0; 1{]}
+\end{itemize}
+
+What is the problem with this representation?
+
+\onslide<4>
+$\Rightarrow$ can lead to contradicting emotion representation, for example
+Happiness = 1 and Sadness = 1.
+}
+
+
+    \only<5>{
+    $\Rightarrow$ continuous representations of emotions in space
+}
+\end{frame}
+
+{
+    \paper{Mollahosseini et al. {\bf Affectnet: A database for facial
+    expression, valence, and arousal computing in the wild}, 2017. arXiv
+    preprint arXiv:1708.03985.}
 \begin{frame}{The circumplex model}
     \begin{center}
-        \includegraphics[width=0.8\linewidth]{AffectNet_circumplex}
+        \includegraphics[width=0.65\linewidth]{AffectNet_circumplex}
     \end{center}
+\end{frame}
+}
+
+\begin{frame}{Representing emotion}
+
+\begin{itemize}
+
+\item \textbf{Emotion circumplex model}
+\end{itemize}
+
+(from \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2367156/}{Posner
+et al., 2008})
+
+\end{frame}
+
+\begin{frame}{Circumplex model}
+
+\textbf{Emotion circumplex model} developed by Russell
+
+Two-dimensional space (\textbf{arousal} and \textbf{valence} on x and y
+dimensions)
+
+\begin{itemize}
+
+\item Emotions are noted on circumference of the circle.
+\item Middle of circle (0,0) is \textbf{neutral}
+\item The further from the centre, the stronger the emotion.
+\end{itemize}
+
+(from \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2367156/}{Posner
+et al., 2008})
+
+\end{frame}
+
+\begin{frame}{PAD model}
+
+By Albert Mehrabian and James A. Russell (1974)
+
+Three-dimensional representation of emotion.
+
+\begin{itemize}
+
+\item \textbf{Pleasure, Arousal and Dominance}.
+\item Most used model in robotics and Human-Machine Interaction
+\end{itemize}
+
+\textbf{Pleasure}: how pleasant is an emotion. Anger and fear are
+unpleasant emotions, and score low on the pleasure scale. Joy is a
+pleasant emotion.
+
+\textbf{Arousal}: intensity of an emotion. Anger and rage are unpleasant
+emotions, but rage has a higher intensity or a higher arousal state.
+However boredom, which is also an unpleasant state, has a low arousal
+value.
+
+\textbf{Dominance}: controlling and dominant nature of the emotion. For
+instance while both fear and anger are unpleasant emotions, anger is a
+dominant emotion, while fear is a submissive emotion.
+
+\end{frame}
+
+\begin{frame}{PAD model}
+
+Dominance
+
+Arousal
+
+Pleasure
+
+\textbf{Joy}
+
+\textbf{Tired}
+
+\textbf{Soothed}
+
+\textbf{Surprise}
+
+\textbf{Fear}
+
+\textbf{Anger}
+
+\textbf{Alert}
+
+\textbf{Neutral}
+
+\textbf{Calm}
+
+\textbf{Disgust}
+
 \end{frame}
 
 \section{Action Units}

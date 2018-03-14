@@ -1,3 +1,6 @@
+dataset-emotions/
+figs/*.pdf
+figs/*/*.pdf
 build/
 exams/
 .minted*
