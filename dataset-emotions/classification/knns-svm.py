@@ -1,3 +1,4 @@
+import numpy as np
 from numpy import genfromtxt
 import matplotlib.pyplot as plt
 from util import plot_embedding
@@ -19,6 +20,8 @@ testing_categories = csv[:,0]
 ## kNNs
 from sklearn import neighbors
 
+print("\n### kNN")
+
 for k in range(1,10):
 
     clf = neighbors.KNeighborsClassifier(k)
@@ -39,6 +42,7 @@ for k in range(1,10):
 
 from sklearn import svm
 
+print("\n### SVM")
 
 C=1.0
 gamma=0.7
@@ -62,12 +66,32 @@ for kernel in ['rbf','linear','poly']:
 
 from sklearn.decomposition import PCA
 
-pca = PCA(n_components=10)
+pca = PCA(n_components=5)
 pca.fit(training)
 
 training_pca = pca.transform(training)
 testing_pca = pca.transform(testing)
 
+plot_embedding(training_pca, categories,
+               "PCA projection (training dataset)")
+
+
+source_eigenvector1 = pca.inverse_transform([1,0,0,0,0])
+source_eigenvector2 = pca.inverse_transform([0,1,0,0,0])
+emotions_au_centroids = [training[categories == i].mean(axis=0) for i in range(len(emotions))]
+au_keys = ["AU01","AU02","AU04","AU05","AU06","AU07","AU09","AU10","AU12","AU14","AU15","AU17","AU20","AU23","AU25","AU26","AU45"]
+
+print("\n### PCA <-> Action units")
+print("Source of first eigenvectors + mean AUs for the different emotions:\n")
+print("  AU   ev 1   ev 2   " + " ".join([e.rjust(9) for e in emotions]))
+for i, au in enumerate(au_keys):
+    print("%s   %.02f   %.02f  "%(au, source_eigenvector1[i], source_eigenvector2[i]) +\
+           ("      %.02f" * len(emotions)) % tuple(emotions_au_centroids[j][i] for j in range(len(emotions))))
+
+#####################################################################################
+#####################################################################################
+
+print("\n### PCA + kNN")
 for k in range(1,10):
 
     clf = neighbors.KNeighborsClassifier(k)
@@ -84,6 +108,8 @@ for k in range(1,10):
 #####################################################################################
 #####################################################################################
 ## SVM + PCA
+
+print("\n### PCA + SVM")
 
 for kernel in ['rbf','linear','poly']:
 
@@ -103,11 +129,14 @@ for kernel in ['rbf','linear','poly']:
 #####################################################################################
 ## kNNs + LDA
 
+print("\n### LDA")
+
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
-NB_COMPONENTS=5
+NB_COMPONENTS=2
 
 lda = LinearDiscriminantAnalysis(n_components=NB_COMPONENTS)
+#lda = LinearDiscriminantAnalysis(n_components=NB_COMPONENTS,solver="eigen",shrinkage="auto")
 lda.fit(training, categories)
 
 training_lda = lda.transform(training)
@@ -120,10 +149,11 @@ plot_embedding(training_lda, categories,
 plot_embedding(testing_lda, testing_categories,
                "Linear Discriminant projection (test dataset)")
 
-plt.show()
 
 # Percentage of variance explained for each components
 print('explained variance ratio (first %d components): %s' % (NB_COMPONENTS, str(lda.explained_variance_ratio_)))
+
+print("\n### LDA + kNN")
 
 for k in range(1,10):
 
@@ -143,6 +173,8 @@ for k in range(1,10):
 #####################################################################################
 ## SVM + LDA
 
+print("\n### LDA + SVM")
+
 for kernel in ['rbf','linear','poly']:
 
     clf = svm.SVC(kernel=kernel, gamma=gamma, C=C, degree=degree)
@@ -158,3 +190,4 @@ for kernel in ['rbf','linear','poly']:
 
 
 
+plt.show()

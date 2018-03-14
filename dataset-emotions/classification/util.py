@@ -1,7 +1,13 @@
+# -*- coding: utf-8 -*-
+
 import numpy as np
 import PIL.Image as Image
 import matplotlib.pyplot as plt
 from matplotlib import offsetbox
+
+# ensure the font has the required emojis!
+import matplotlib
+matplotlib.rc('font', family='DejaVu Sans')
 
 def normalize(X, low, high, dtype=None):
     X = np.asarray(X)
@@ -48,8 +54,8 @@ def plot_embedding(X, labels, title=None):
     ax = plt.subplot(111)
     for i in range(X.shape[0]):
         plt.text(X[i, 0], X[i, 1], EMOTIONS[int(labels[i])],
-                 color=plt.cm.Dark2_r(int(labels[i]) / 8.),
-                 fontdict={'weight': 'bold', 'size': 12})
+                 color=plt.cm.Dark2((int(labels[i]) + 1) / 8.),
+                 fontdict={'weight': 'bold', 'size': 20})
 
     plt.xticks([]), plt.yticks([])
     if title is not None:

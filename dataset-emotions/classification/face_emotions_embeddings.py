@@ -44,7 +44,9 @@ plot_embedding(pca.transform(training_images), training_categories,
 ## LDA
 
 
+#lda = LinearDiscriminantAnalysis(n_components=10,solver='lsqr',shrinkage='auto')
 lda = LinearDiscriminantAnalysis(n_components=10)
+
 lda.fit(training_images, training_categories)
 
 plot_embedding(lda.transform(training_images), training_categories,
