@@ -73,7 +73,13 @@ training_pca = pca.transform(training)
 testing_pca = pca.transform(testing)
 
 plot_embedding(training_pca, categories,
-               "PCA projection (training dataset)")
+               "PCA projection (training)",
+               xlabel="1st eigenvector", ylabel="2nd eigenvector")
+
+
+plot_embedding(testing_pca, testing_categories,
+               "PCA projection (testing)",
+               xlabel="1st eigenvector", ylabel="2nd eigenvector")
 
 
 source_eigenvector1 = pca.inverse_transform([1,0,0,0,0])
@@ -143,11 +149,13 @@ training_lda = lda.transform(training)
 testing_lda = lda.transform(testing)
 
 plot_embedding(training_lda, categories,
-               "Linear Discriminant projection (training dataset)")
+               "Linear Discriminant projection (training)",
+               xlabel="1st dimension", ylabel="2nd dimension")
 
 
 plot_embedding(testing_lda, testing_categories,
-               "Linear Discriminant projection (test dataset)")
+               "Linear Discriminant projection (testing)",
+               xlabel="1st dimension", ylabel="2nd dimension")
 
 
 # Percentage of variance explained for each components

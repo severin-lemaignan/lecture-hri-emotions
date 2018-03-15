@@ -45,7 +45,7 @@ def plot_gallery(title, images, image_shape, n_col=4, n_row=4):
 
 
 
-def plot_embedding(X, labels, title=None):
+def plot_embedding(X, labels, title=None,xlabel=None, ylabel=None):
     EMOTIONS=["😱","😀","😠","😮","😓","😜"]
     x_min, x_max = np.min(X, 0), np.max(X, 0)
     X = (X - x_min) / (x_max - x_min)
@@ -57,7 +57,11 @@ def plot_embedding(X, labels, title=None):
                  color=plt.cm.Dark2((int(labels[i]) + 1) / 8.),
                  fontdict={'weight': 'bold', 'size': 20})
 
-    plt.xticks([]), plt.yticks([])
+    #plt.xticks([]), plt.yticks([])
+    if xlabel is not None:
+        plt.xlabel(xlabel, fontsize=12)
+    if ylabel is not None:
+        plt.ylabel(ylabel, fontsize=12)
     if title is not None:
-        plt.title(title)
+        plt.title(title, fontsize=15)
 
