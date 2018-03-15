@@ -15,7 +15,7 @@
    viewBox="0 0 2267.7165 1700.7874"
    id="svg14915"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="emotions_dataset_aligned.svg">
   <defs
      id="defs14917" />
@@ -26,17 +26,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="1293.3482"
-     inkscape:cy="876.77924"
+     inkscape:zoom="0.7"
+     inkscape:cx="1185.3358"
+     inkscape:cy="633.28827"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-global="false"
      inkscape:window-width="2560"
-     inkscape:window-height="1304"
+     inkscape:window-height="1011"
      inkscape:window-x="0"
-     inkscape:window-y="64"
+     inkscape:window-y="873"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata14920">
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,293 +55,329 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,648.4252)">
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-001_aligned.bmp"
-       y="155.40768"
-       x="400.83289"
-       id="image16414"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-001_aligned.bmp"
-       preserveAspectRatio="none"
-       height="198.56805"
-       width="198.56805" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-002_aligned.bmp"
-       y="85.050865"
-       x="1932.2313"
-       id="image16425"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-002_aligned.bmp"
-       preserveAspectRatio="none"
-       height="216.28572"
-       width="216.28572" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-003_aligned.bmp"
-       y="-275.19376"
-       x="1077.0372"
-       id="image16436"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-003_aligned.bmp"
-       preserveAspectRatio="none"
-       height="198.56805"
-       width="198.56805" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-004_aligned.bmp"
-       y="800.47498"
-       x="1878.4829"
-       id="image16447"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-004_aligned.bmp"
-       preserveAspectRatio="none"
-       height="198.56805"
-       width="198.56805" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-005_aligned.bmp"
-       y="-602.81116"
-       x="778.19806"
-       id="image16458"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/surprise/processed/aligned/surprise-005_aligned.bmp"
-       preserveAspectRatio="none"
-       height="198.56805"
-       width="198.56805" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-001_aligned.bmp"
-       y="-605.73969"
-       x="69.258827"
-       id="image16469"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-001_aligned.bmp"
-       preserveAspectRatio="none"
-       height="210.99495"
-       width="210.99495" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-002_aligned.bmp"
-       y="234.70721"
-       x="744.04071"
-       id="image16480"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-002_aligned.bmp"
-       preserveAspectRatio="none"
-       height="210.99495"
-       width="210.99495" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-003_aligned.bmp"
-       y="-565.33362"
-       x="1921.8785"
-       id="image16491"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-003_aligned.bmp"
-       preserveAspectRatio="none"
-       height="210.99495"
-       width="210.99495" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-004_aligned.bmp"
-       y="131.67165"
-       x="97.543098"
-       id="image16502"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-004_aligned.bmp"
-       preserveAspectRatio="none"
-       height="210.99495"
-       width="210.99495" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-005_aligned.bmp"
-       y="-256.22693"
-       x="1909.7567"
-       id="image16513"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/fear/processed/aligned/fear-005_aligned.bmp"
-       preserveAspectRatio="none"
-       height="210.99495"
-       width="210.99495" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-001_aligned.bmp"
-       y="741.80383"
-       x="1204.6703"
-       id="image16524"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-001_aligned.bmp"
-       preserveAspectRatio="none"
-       height="213.01526"
-       width="213.01526" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-002_aligned.bmp"
-       y="-621.9021"
-       x="1491.5537"
-       id="image16535"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-002_aligned.bmp"
-       preserveAspectRatio="none"
-       height="213.01526"
-       width="213.01526" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-003_aligned.bmp"
-       y="-280.47055"
-       x="83.401016"
-       id="image16546"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-003_aligned.bmp"
-       preserveAspectRatio="none"
-       height="213.01526"
-       width="213.01526" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-004_aligned.bmp"
-       y="-282.49088"
-       x="392.50769"
-       id="image16557"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-004_aligned.bmp"
-       preserveAspectRatio="none"
-       height="213.01526"
-       width="213.01526" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-005_aligned.bmp"
-       y="-306.73453"
-       x="764.24384"
-       id="image16568"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/sadness/processed/aligned/sadness-005_aligned.bmp"
-       preserveAspectRatio="none"
-       height="213.01526"
-       width="213.01526" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-001_aligned.bmp"
-       y="30.656412"
-       x="1071.3302"
-       id="image16579"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-001_aligned.bmp"
-       preserveAspectRatio="none"
-       height="215.03555"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-002_aligned.bmp"
-       y="-33.993351"
-       x="659.18799"
-       id="image16590"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-002_aligned.bmp"
-       preserveAspectRatio="none"
-       height="215.03555"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-003_aligned.bmp"
-       y="460.98138"
-       x="55.116772"
-       id="image16601"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-003_aligned.bmp"
-       preserveAspectRatio="none"
-       height="215.03555"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-004_aligned.bmp"
-       y="145.8138"
-       x="1531.9598"
-       id="image16612"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-004_aligned.bmp"
-       preserveAspectRatio="none"
-       height="215.03555"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-005_aligned.bmp"
-       y="747.86475"
-       x="1449.1273"
-       id="image16623"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-005_aligned.bmp"
-       preserveAspectRatio="none"
-       height="215.03555"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-001_aligned.bmp"
-       y="501.38751"
-       x="1962.2849"
-       id="image16634"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-001_aligned.bmp"
-       preserveAspectRatio="none"
-       height="217.05586"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-002_aligned.bmp"
-       y="521.59058"
-       x="802.62976"
-       id="image16645"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-002_aligned.bmp"
-       preserveAspectRatio="none"
-       height="217.05586"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-003_aligned.bmp"
-       y="-337.03912"
-       x="1437.0055"
-       id="image16656"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-003_aligned.bmp"
-       preserveAspectRatio="none"
-       height="217.05586"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-004_aligned.bmp"
-       y="460.98141"
-       x="1531.9598"
-       id="image16667"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-004_aligned.bmp"
-       preserveAspectRatio="none"
-       height="217.05586"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-005_aligned.bmp"
-       y="-619.88184"
-       x="1079.4115"
-       id="image16678"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/happiness/processed/aligned/happiness-005_aligned.bmp"
-       preserveAspectRatio="none"
-       height="217.05586"
-       width="217.05586" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-021_aligned.bmp"
-       y="-596.38831"
-       x="433.16141"
-       id="image16689"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-021_aligned.bmp"
-       preserveAspectRatio="none"
-       height="203.76601"
-       width="206.88264" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-011_aligned.bmp"
-       y="796.97992"
-       x="79.546387"
-       id="image16700"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-011_aligned.bmp"
-       preserveAspectRatio="none"
-       height="203.76601"
-       width="206.88264" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-008_aligned.bmp"
-       y="794.33173"
-       x="401.85052"
-       id="image16711"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-008_aligned.bmp"
-       preserveAspectRatio="none"
-       height="203.76601"
-       width="206.88264" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-028_aligned.bmp"
-       y="808.87579"
-       x="771.78754"
-       id="image16722"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-028_aligned.bmp"
-       preserveAspectRatio="none"
-       height="203.76601"
-       width="206.88264" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-053_aligned.bmp"
-       y="-97.475174"
-       x="1437.0055"
-       id="image16733"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-053_aligned.bmp"
-       preserveAspectRatio="none"
-       height="203.76601"
-       width="206.88264" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-038_aligned.bmp"
-       y="502.13837"
-       x="404.70142"
-       id="image16744"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/anger/processed/aligned/anger-038_aligned.bmp"
-       preserveAspectRatio="none"
-       height="203.76601"
-       width="206.88264" />
-    <image
-       sodipodi:absref="/home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-006_aligned.bmp"
-       y="394.31134"
-       x="1190.5281"
-       id="image16755"
-       xlink:href="file:///home/skadge/teaching/aint512/lecture-hri-emotions/dataset-emotions/disgust/processed/aligned/disgust-006_aligned.bmp"
-       preserveAspectRatio="none"
-       height="213.01526"
-       width="213.01526" />
+    <g
+       id="g1467"
+       style="font-variant-east_asian:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/surprise/processed/aligned/surprise-001_aligned.bmp"
+         xlink:href="../dataset-emotions/surprise/processed/aligned/surprise-001_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="144.69341"
+         x="394.13644"
+         id="image16414"
+         preserveAspectRatio="none"
+         height="198.56805"
+         width="198.56805" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/surprise/processed/aligned/surprise-002_aligned.bmp"
+         xlink:href="../dataset-emotions/surprise/processed/aligned/surprise-002_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="97.104439"
+         x="1908.1241"
+         id="image16425"
+         preserveAspectRatio="none"
+         height="216.28572"
+         width="216.28572" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/surprise/processed/aligned/surprise-003_aligned.bmp"
+         xlink:href="../dataset-emotions/surprise/processed/aligned/surprise-003_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-275.19376"
+         x="1066.323"
+         id="image16436"
+         preserveAspectRatio="none"
+         height="198.56805"
+         width="198.56805" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/surprise/processed/aligned/surprise-004_aligned.bmp"
+         xlink:href="../dataset-emotions/surprise/processed/aligned/surprise-004_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="813.86786"
+         x="1885.1793"
+         id="image16447"
+         preserveAspectRatio="none"
+         height="198.56805"
+         width="198.56805" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/surprise/processed/aligned/surprise-005_aligned.bmp"
+         xlink:href="../dataset-emotions/surprise/processed/aligned/surprise-005_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-581.38257"
+         x="786.23376"
+         id="image16458"
+         preserveAspectRatio="none"
+         height="198.56805"
+         width="198.56805" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/fear/processed/aligned/fear-001_aligned.bmp"
+         xlink:href="../dataset-emotions/fear/processed/aligned/fear-001_aligned.bmp"
+         style="font-variant-east_asian:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-605.73969"
+         x="69.258827"
+         id="image16469"
+         preserveAspectRatio="none"
+         height="210.99495"
+         width="210.99495" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/fear/processed/aligned/fear-002_aligned.bmp"
+         xlink:href="../dataset-emotions/fear/processed/aligned/fear-002_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="260.15366"
+         x="750.73712"
+         id="image16480"
+         preserveAspectRatio="none"
+         height="210.99495"
+         width="210.99495" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/fear/processed/aligned/fear-003_aligned.bmp"
+         xlink:href="../dataset-emotions/fear/processed/aligned/fear-003_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-569.3515"
+         x="1931.2535"
+         id="image16491"
+         preserveAspectRatio="none"
+         height="210.99495"
+         width="210.99495" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/fear/processed/aligned/fear-004_aligned.bmp"
+         xlink:href="../dataset-emotions/fear/processed/aligned/fear-004_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="153.10022"
+         x="100.22167"
+         id="image16502"
+         preserveAspectRatio="none"
+         height="210.99495"
+         width="210.99495" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/fear/processed/aligned/fear-005_aligned.bmp"
+         xlink:href="../dataset-emotions/fear/processed/aligned/fear-005_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-210.69122"
+         x="1904.3995"
+         id="image16513"
+         preserveAspectRatio="none"
+         height="210.99495"
+         width="210.99495" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/sadness/processed/aligned/sadness-001_aligned.bmp"
+         xlink:href="../dataset-emotions/sadness/processed/aligned/sadness-001_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="739.12524"
+         x="1211.3667"
+         id="image16524"
+         preserveAspectRatio="none"
+         height="213.01526"
+         width="213.01526" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/sadness/processed/aligned/sadness-002_aligned.bmp"
+         xlink:href="../dataset-emotions/sadness/processed/aligned/sadness-002_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-591.09851"
+         x="1515.6609"
+         id="image16535"
+         preserveAspectRatio="none"
+         height="213.01526"
+         width="213.01526" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/sadness/processed/aligned/sadness-003_aligned.bmp"
+         xlink:href="../dataset-emotions/sadness/processed/aligned/sadness-003_aligned.bmp"
+         style="font-variant-east_asian:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-280.47055"
+         x="83.401016"
+         id="image16546"
+         preserveAspectRatio="none"
+         height="213.01526"
+         width="213.01526" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/sadness/processed/aligned/sadness-004_aligned.bmp"
+         xlink:href="../dataset-emotions/sadness/processed/aligned/sadness-004_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-278.47302"
+         x="419.2934"
+         id="image16557"
+         preserveAspectRatio="none"
+         height="213.01526"
+         width="213.01526" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/sadness/processed/aligned/sadness-005_aligned.bmp"
+         xlink:href="../dataset-emotions/sadness/processed/aligned/sadness-005_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-279.94882"
+         x="760.22595"
+         id="image16568"
+         preserveAspectRatio="none"
+         height="213.01526"
+         width="213.01526" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/disgust/processed/aligned/disgust-001_aligned.bmp"
+         xlink:href="../dataset-emotions/disgust/processed/aligned/disgust-001_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="33.334984"
+         x="1076.6874"
+         id="image16579"
+         preserveAspectRatio="none"
+         height="215.03555"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/disgust/processed/aligned/disgust-002_aligned.bmp"
+         xlink:href="../dataset-emotions/disgust/processed/aligned/disgust-002_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-17.921923"
+         x="648.47369"
+         id="image16590"
+         preserveAspectRatio="none"
+         height="215.03555"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/disgust/processed/aligned/disgust-003_aligned.bmp"
+         xlink:href="../dataset-emotions/disgust/processed/aligned/disgust-003_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="493.12424"
+         x="49.759628"
+         id="image16601"
+         preserveAspectRatio="none"
+         height="215.03555"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/disgust/processed/aligned/disgust-004_aligned.bmp"
+         xlink:href="../dataset-emotions/disgust/processed/aligned/disgust-004_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="153.84952"
+         x="1526.6027"
+         id="image16612"
+         preserveAspectRatio="none"
+         height="215.03555"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/disgust/processed/aligned/disgust-005_aligned.bmp"
+         xlink:href="../dataset-emotions/disgust/processed/aligned/disgust-005_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="780.00763"
+         x="1435.7345"
+         id="image16623"
+         preserveAspectRatio="none"
+         height="215.03555"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/happiness/processed/aligned/happiness-001_aligned.bmp"
+         xlink:href="../dataset-emotions/happiness/processed/aligned/happiness-001_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="512.10181"
+         x="1971.6599"
+         id="image16634"
+         preserveAspectRatio="none"
+         height="217.05586"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/happiness/processed/aligned/happiness-002_aligned.bmp"
+         xlink:href="../dataset-emotions/happiness/processed/aligned/happiness-002_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="549.71558"
+         x="822.71906"
+         id="image16645"
+         preserveAspectRatio="none"
+         height="217.05586"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/happiness/processed/aligned/happiness-003_aligned.bmp"
+         xlink:href="../dataset-emotions/happiness/processed/aligned/happiness-003_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-327.66412"
+         x="1441.0233"
+         id="image16656"
+         preserveAspectRatio="none"
+         height="217.05586"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/happiness/processed/aligned/happiness-004_aligned.bmp"
+         xlink:href="../dataset-emotions/happiness/processed/aligned/happiness-004_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="483.74927"
+         x="1539.9956"
+         id="image16667"
+         preserveAspectRatio="none"
+         height="217.05586"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/happiness/processed/aligned/happiness-005_aligned.bmp"
+         xlink:href="../dataset-emotions/happiness/processed/aligned/happiness-005_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-614.52472"
+         x="1057.9829"
+         id="image16678"
+         preserveAspectRatio="none"
+         height="217.05586"
+         width="217.05586" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/anger/processed/aligned/anger-021_aligned.bmp"
+         xlink:href="../dataset-emotions/anger/processed/aligned/anger-021_aligned.bmp"
+         style="font-variant-east_asian:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-596.38831"
+         x="433.16141"
+         id="image16689"
+         preserveAspectRatio="none"
+         height="203.76601"
+         width="206.88264" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/anger/processed/aligned/anger-011_aligned.bmp"
+         xlink:href="../dataset-emotions/anger/processed/aligned/anger-011_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="803.67633"
+         x="82.22496"
+         id="image16700"
+         preserveAspectRatio="none"
+         height="203.76601"
+         width="206.88264" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/anger/processed/aligned/anger-008_aligned.bmp"
+         xlink:href="../dataset-emotions/anger/processed/aligned/anger-008_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="829.15314"
+         x="405.86838"
+         id="image16711"
+         preserveAspectRatio="none"
+         height="203.76601"
+         width="206.88264" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/anger/processed/aligned/anger-028_aligned.bmp"
+         xlink:href="../dataset-emotions/anger/processed/aligned/anger-028_aligned.bmp"
+         style="font-variant-east_asian:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="808.87579"
+         x="771.78754"
+         id="image16722"
+         preserveAspectRatio="none"
+         height="203.76601"
+         width="206.88264" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/anger/processed/aligned/anger-053_aligned.bmp"
+         xlink:href="../dataset-emotions/anger/processed/aligned/anger-053_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="-69.350174"
+         x="1431.6483"
+         id="image16733"
+         preserveAspectRatio="none"
+         height="203.76601"
+         width="206.88264" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/anger/processed/aligned/anger-038_aligned.bmp"
+         xlink:href="../dataset-emotions/anger/processed/aligned/anger-038_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="516.87048"
+         x="407.37997"
+         id="image16744"
+         preserveAspectRatio="none"
+         height="203.76601"
+         width="206.88264" />
+      <image
+         sodipodi:absref="/home/slemaignan/teaching/aint512/lecture-emotions/figs/../dataset-emotions/disgust/processed/aligned/disgust-006_aligned.bmp"
+         xlink:href="../dataset-emotions/disgust/processed/aligned/disgust-006_aligned.bmp"
+         style="vector-effect:none;fill:#000000;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         y="406.3649"
+         x="1187.8495"
+         id="image16755"
+         preserveAspectRatio="none"
+         height="213.01526"
+         width="213.01526" />
+    </g>
   </g>
 </svg>

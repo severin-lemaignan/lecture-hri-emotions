@@ -256,48 +256,39 @@ Happiness = 1 and Sadness = 1.
 \end{frame}
 
 {
-    \paper{Mollahosseini et al. {\bf Affectnet: A database for facial
-    expression, valence, and arousal computing in the wild}, 2017. arXiv
-    preprint arXiv:1708.03985.}
-\begin{frame}{The circumplex model}
-    \begin{center}
-        \includegraphics[width=0.65\linewidth]{AffectNet_circumplex}
-    \end{center}
-\end{frame}
-}
-
-\begin{frame}{Representing emotion}
-
-\begin{itemize}
-
-\item \textbf{Emotion circumplex model}
-\end{itemize}
-
-(from \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2367156/}{Posner
-et al., 2008})
-
-\end{frame}
-
+    \paper{Russell J. {\bf A circumplex model of affect} 1980}
 \begin{frame}{Circumplex model}
-
-\textbf{Emotion circumplex model} developed by Russell
 
 Two-dimensional space (\textbf{arousal} and \textbf{valence} on x and y
 dimensions)
 
 \begin{itemize}
 
-\item Emotions are noted on circumference of the circle.
-\item Middle of circle (0,0) is \textbf{neutral}
-\item The further from the centre, the stronger the emotion.
+\item emotions are noted on circumference of the circle.
+\item middle of circle (0,0) is \textbf{neutral}
+\item the further from the centre, the stronger the emotion.
 \end{itemize}
 
-(from \href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2367156/}{Posner
-et al., 2008})
-
+    \begin{center}
+        \includegraphics[width=0.55\linewidth]{circumplex}
+        \source{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2367156/}{Posner
+et al., 2005}
+    \end{center}
 \end{frame}
+}
 
-\begin{frame}{PAD model}
+{
+    \paper{Mollahosseini et al. {\bf Affectnet: A database for facial
+    expression, valence, and arousal computing in the wild} 2017}
+\begin{frame}{Circumplex model}
+    \begin{center}
+        \includegraphics[width=0.65\linewidth]{AffectNet_circumplex.png}
+    \end{center}
+\end{frame}
+}
+
+
+\begin{frame}{P-A-D model}
 
 By Albert Mehrabian and James A. Russell (1974)
 
@@ -309,14 +300,20 @@ Three-dimensional representation of emotion.
 \item Most used model in robotics and Human-Machine Interaction
 \end{itemize}
 
+\pause
+
 \textbf{Pleasure}: how pleasant is an emotion. Anger and fear are
 unpleasant emotions, and score low on the pleasure scale. Joy is a
 pleasant emotion.
+
+\pause
 
 \textbf{Arousal}: intensity of an emotion. Anger and rage are unpleasant
 emotions, but rage has a higher intensity or a higher arousal state.
 However boredom, which is also an unpleasant state, has a low arousal
 value.
+
+\pause
 
 \textbf{Dominance}: controlling and dominant nature of the emotion. For
 instance while both fear and anger are unpleasant emotions, anger is a
@@ -324,35 +321,41 @@ dominant emotion, while fear is a submissive emotion.
 
 \end{frame}
 
+{
+    \paper{H. Hoffmann, A Scheck, T. Schuster, H. Kessler {\bf Mapping discrete
+    emotions into the dimensional space: An empirical approach} 2012}
 \begin{frame}{PAD model}
 
-Dominance
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+    \begin{center}
+        \includegraphics[width=\linewidth]{pad}
+    \end{center}
 
-Arousal
 
-Pleasure
-
-\textbf{Joy}
-
-\textbf{Tired}
-
-\textbf{Soothed}
-
-\textbf{Surprise}
-
-\textbf{Fear}
-
-\textbf{Anger}
-
-\textbf{Alert}
-
-\textbf{Neutral}
-
-\textbf{Calm}
-
-\textbf{Disgust}
+        \end{column}
+        \begin{column}{0.5\linewidth}
+        \begin{center}
+            \includegraphics[width=\linewidth]{pad-mapping}
+        \end{center}
+        \end{column}
+    \end{columns}
 
 \end{frame}
+}
+
+\miniframesoff
+
+\begin{frame}[plain]
+    \begin{center}
+        Now, how to map automatically a face onto one of these models?
+    \end{center}
+\end{frame}
+
+\miniframeson
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Action Units}
 
@@ -365,6 +368,16 @@ Pleasure
     \paper{Ekman, {\bf The Facial Action Coding System}, 1977}
 \begin{frame}{Facial Action Coding System}
 
+    \begin{center}
+         The {\bf Facial Action Coding System} (FACS) aim is to {\bf taxonomize
+         human facial movements} by their appearance on the face.
+
+        Facial movements are encoded as {\bf action units}.
+
+    \end{center}
+
+    \href{https://en.wikipedia.org/wiki/Facial_Action_Coding_System}{Wikipedia
+    has a large list of action units}.
 \end{frame}
 }
 
@@ -455,17 +468,19 @@ Pleasure
 
 \begin{frame}{OpenFace Action Units}
     \begin{center}
-        \Large \href{https://github.com/TadasBaltrusaitis/OpenFace}{github.com/TadasBaltrusaitis/OpenFace}
+        OpenFace is an open-source library that recognises 17 action units.
+
+        \href{https://github.com/TadasBaltrusaitis/OpenFace}{github.com/TadasBaltrusaitis/OpenFace}
         \vspace{2em}
 
-        \includegraphics[width=\linewidth]{au_openface}
+        \includegraphics[width=0.9\linewidth]{au-openface}
 
         \scriptsize
         (not to be confused with this other \href{https://github.com/cmusatyalab/openface}{CMU OpenFace})
     \end{center}
 \end{frame}
 
-\begin{frame}{OpenFace 18 Action Units}
+\begin{frame}{OpenFace 17 Action Units}
 
     \begin{columns}
         \begin{column}{0.5\linewidth}
@@ -508,13 +523,12 @@ Pleasure
     \textbf{9}  & Nose Wrinkler        &  \au{09} \\
     \textbf{10} & Upper Lip Raiser     &  \au{10} \\
     \textbf{12} & Lip Corner Puller    &  \au{12} \\
-    \textbf{14} & Dimpler              &  \au{14} \\
     \bottomrule
     }
     \only<2>{
+    \textbf{14} & Dimpler              &  \au{14} \\
     \textbf{25} & Lips part            &  \au{25} \\
     \textbf{26} & Jaw Drop             &  \au{26} \\
-    \textbf{28} & Lip Suck             &  \au{28} \\
     \textbf{45} & Blink                &          \\
     \bottomrule
     }
@@ -525,12 +539,6 @@ Pleasure
 
 \end{frame}
 
-\begin{frame}{Action Units}
-
-
-
-\source{https://en.wikipedia.org/wiki/Facial_Action_Coding_System}{Wikipedia}
-\end{frame}
 
 \section[Emotion classifier]{Let's build our own emotion classifier from scratch}
 
@@ -588,12 +596,64 @@ Pleasure
     \begin{enumerate}
         \item<+-> 'eigenfaces' (PCA) on the training dataset; then project test
             faces +
-            kNN/SVM (\ie similar to face recognition)
+            kNN/SVM (\ie face recognition with 6 possible classes)
         \item<+-> LDA instead of PCA to improve inter-class discrimination
-        \item<+-> kNN/SVM on the action units?
+        \item<+-> kNN/SVM on the action units directly?
         \item<+-> PCA, then kNN/SVM on the action units?
         \item<+-> LDA, then kNN/SVM on the action units?
     \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Python helpers}
+\begin{pythoncode}
+import numpy as np
+import PIL.Image as Image
+import matplotlib.pyplot as plt
+
+def read_image(path):
+    im = Image.open(path)
+    im = im.convert("L") # to grayscale
+    return np.asarray(im, dtype=np.uint8).flatten()
+
+def plot_embedding(X, labels):
+
+    x_min, x_max = np.min(X, 0), np.max(X, 0)
+    X = (X - x_min) / (x_max - x_min)
+
+    plt.figure()
+    ax = plt.subplot(111)
+    for i in range(X.shape[0]):
+        plt.text(X[i, 0], X[i, 1], str(labels[i])],
+                 color=plt.cm.Dark2((int(labels[i]) + 1) / 8.))
+\end{pythoncode}
+\end{frame}
+
+
+\begin{frame}[fragile]{PCA on the dataset}
+    \begin{pythoncode}
+import csv
+from sklearn.decomposition import PCA
+
+training_images = []
+training_categories = []
+with open("training.csv", 'r') as csvfile:
+    details = csv.DictReader(csvfile, skipinitialspace=True)
+    for row in details:
+        training_images.append(read_image(row["face"]))
+        training_categories.append(row["emotion"])
+
+# same for testing set
+testing_images = ...
+testing_categories = ...
+
+pca = PCA(n_components=20)
+pca.fit(training_images)
+
+# plots only the 2 first coordinates in PCA space
+plot_embedding(pca.transform(training_images), training_categories)
+plot_embedding(pca.transform(testing_images), testing_categories)
+
+\end{pythoncode}
 \end{frame}
 
 \imageframe{image_pca_train}
@@ -617,23 +677,67 @@ Pleasure
     \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{LDA on the dataset}
+    \begin{pythoncode}
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+lda = LinearDiscriminantAnalysis(n_components=20)
+
+lda.fit(training_images, training_categories)
+
+plot_embedding(lda.transform(training_images), training_categories)
+plot_embedding(lda.transform(testing_images), testing_categories)
+\end{pythoncode}
+\end{frame}
+
+
 \imageframe{image_lda_train}
 
 \begin{frame}{Linear Discriminant Analysis overfitting}
+
+    \begin{center}
+        Great result? No! Massive overfitting!
+    \end{center}
 
     LDA requires the number of samples per class $n$ (\ie number of faces per
     emotion, 50 here) to be much larger than the number of features $p$ (in our case,
     $112\times 112$ px $= 12544$!)
 
     Rule of thumb: $n > 3\cdot p$
+
+    ...not going to work if we use the pixels directly.
 \end{frame}
 
 \imageframe{image_lda_test}
 
 \begin{frame}{}
 
-    Idea: first, reduce dimensionality (using PCA for instance), and then,
+    {\bf Idea}: first, reduce dimensionality (using PCA for instance), and then,
     perform a LDA on the lower dimensionality representation.
+\end{frame}
+
+
+\begin{frame}[fragile]{PCA + LDA on the dataset}
+    \begin{pythoncode}
+from sklearn.decomposition import PCA
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+# first, PCA on 12544-D observations
+pca = PCA(n_components=20)
+pca.fit(training_images)
+
+# then LDA on 20-D observations
+lda = LinearDiscriminantAnalysis(n_components=10)
+lda.fit(pca.transform(training_images), training_categories)
+
+# apply the transform...
+lda_pca_training_images = lda.transform(pca.transform(training_images))
+lda_pca_testing_images = lda.transform(pca.transform(testing_images))
+
+# and plot!
+plot_embedding(lda_pca_training_images, training_categories)
+plot_embedding(lda_pca_testing_images, testing_categories)
+\end{pythoncode}
 \end{frame}
 
 
@@ -661,6 +765,12 @@ Pleasure
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Confusion matrix}
+    \begin{center}
+        \includegraphics[width=0.8\linewidth]{confusion_matrix_image_pca_lda_svm}
+    \end{center}
+\end{frame}
+
 \begin{frame}[fragile]{Classification results, Action Units}
     
 
@@ -668,8 +778,6 @@ Pleasure
         {\bf What about classifying using the 17 action units directly?}
     \end{center}
 
-
-    \% of successful emotion prediction out of 258 test faces
     \begin{columns}
         \begin{column}{0.4\linewidth}
     {\bf kNN}:
@@ -724,7 +832,6 @@ svm_predictions = clf.predict(testing)
 
     Classification on the first 5 eigen components.
 
-    \% of successful emotion prediction out of 258 test faces
     {\bf kNN}:
     \begin{itemize}
         \item k=1: 45.7\%
@@ -751,8 +858,6 @@ svm_predictions = clf.predict(testing)
 
     \only<1>{
     Classification on the first 5 components.
-
-    \% of successful emotion prediction out of 258 test faces
 
 
     {\bf kNN}:
@@ -801,11 +906,23 @@ svm_predictions = clf.predict(testing)
 
 \end{frame}
 
+\begin{frame}{Confusion matrix}
+    \begin{center}
+        \includegraphics<1>[width=0.8\linewidth]{confusion_matrix_au_lda_svm}
+
+        \includegraphics<2>[width=0.45\linewidth]{confusion_matrix_au_lda_svm}
+        \includegraphics<2>[width=0.45\linewidth]{confusion_matrix_image_pca_lda_svm}
+    \end{center}
+\end{frame}
+
+
 \begin{frame}{How to improve it further?}
 
     \begin{center}
         Ideas?
     \end{center}
+
+    \pause
 
     \begin{itemize}
         \item better dataset (wider range of facial expressions)
@@ -816,10 +933,23 @@ svm_predictions = clf.predict(testing)
 
 \end{frame}
 
+\imageframe[color=black,caption=Natural emotions are much harder]{natural-emotions-hulot}
 
-\section{Generating emotional responses}
+\section[Generation]{Generating emotional responses}
 
 \imageframe{wall-e}
+
+\begin{frame}{How to express the robot's internal state?}
+    \begin{itemize}
+        \item facial expressions (when available!)
+        \item Gestures/postures
+        \item non-verbal utterances, sounds
+        \item dynamics of motion
+        \item proxemics
+        \item ...
+    \end{itemize}
+\end{frame}
+
 
 \begin{frame}{How expressive a robot can be?}
 
@@ -839,6 +969,9 @@ svm_predictions = clf.predict(testing)
 
 \imageframe[color=black]{cozmo-expression-sheet}
 
+\videoframe[0.56]{figs/readability.m4v}
+\videoframe{figs/nlu-starwars.mp4}
+\videoframe[0.56]{figs/nlu.mp4}
 
 \section{Anthropomorphism}
 
@@ -870,6 +1003,41 @@ svm_predictions = clf.predict(testing)
         \end{column}
     \end{columns}
 \end{frame}
+
+
+\begin{frame}{Disruptive behaviours to elicit engagement?}
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+            \begin{center}
+            \video[0.56]{0.9\linewidth}{figs/ranger/correct.mp4}
+
+            \video[0.56]{0.9\linewidth}{figs/ranger/mistake.mp4}
+            \end{center}
+        \end{column}
+        \begin{column}{0.5\linewidth}
+            \begin{center}
+            \video[0.56]{0.9\linewidth}{figs/ranger/lost.mp4}
+
+            \video[0.56]{0.9\linewidth}{figs/ranger/disobey.mp4}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+{
+    \paper{Lemaignan, Fink, Mondada, Dillenbourg {\bf You're Doing
+    It Wrong! Studying Unexpected Behaviors in CRI} ICSR
+    2015}
+\fullbackground{ranger/ranger-background}
+
+\begin{frame}{Anthropomorphism != Engagement}
+
+    \begin{figure}
+        \hspace*{5cm}\includegraphics[width=0.6\linewidth]{ranger/domino-correlation}
+    \end{figure}
+
+\end{frame}
+}
 
 
 \miniframesoff
