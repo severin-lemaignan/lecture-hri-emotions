@@ -532,6 +532,291 @@ Pleasure
 \source{https://en.wikipedia.org/wiki/Facial_Action_Coding_System}{Wikipedia}
 \end{frame}
 
+\section[Emotion classifier]{Let's build our own emotion classifier from scratch}
+
+\begin{frame}{Shopping list}
+
+    \begin{center}
+        {\bf What do we need?}
+    \end{center}
+
+    \pause
+
+    \begin{itemize}
+        \item<+-> a dataset of labelled faces
+        \item<+-> some pre-processing faces to normalise them
+        \item<+-> features to extract
+        \item<+-> a classifier
+    \end{itemize}
+\end{frame}
+
+\imageframe[color=black]{google-emotions-query}
+\imageframe[color=black]{emotions_dataset}
+\imageframe[color=black]{emotions_dataset_aligned}
+\imageframe[color=black]{emotion-dataset-csv}
+
+\begin{frame}{Our tiny 'emotions' dataset}
+    \begin{itemize}
+        \item A couple of \href{https://www.google.co.uk/search?q=human+face+happiness&tbm=isch&source=lnt&tbs=itp:face}{Google queries}
+        \item a bit of manual filtering
+        \item 558 faces, between 70 and 130 per emotion
+        \item split into 2 datasets: a {\bf training} dataset (50 face per
+            emotion) and a {\bf testing} dataset
+        \item for each face, OpenFace pre-processing to:
+            \begin{itemize}
+                \item extract facial landmarks
+                \item normalise and mask out the faces
+                \item extract action units
+            \end{itemize}
+    \end{itemize}
+
+    The dataset is available for you to play with on the lecture's
+    \href{https://github.com/severin-lemaignan/lecture-hri-emotions}{GitHub repo}.
+\end{frame}
+
+\begin{frame}{Classification?}
+
+    We want to train a classifier with our training dataset, and then check
+    whether the emotions in the test faces can be properly recognised.
+
+    \begin{center}
+        {\bf What are our options here?}
+    \end{center}
+
+    \pause
+
+    \begin{enumerate}
+        \item<+-> 'eigenfaces' (PCA) on the training dataset; then project test
+            faces +
+            kNN/SVM (\ie similar to face recognition)
+        \item<+-> LDA instead of PCA to improve inter-class discrimination
+        \item<+-> kNN/SVM on the action units?
+        \item<+-> PCA, then kNN/SVM on the action units?
+        \item<+-> LDA, then kNN/SVM on the action units?
+    \end{enumerate}
+\end{frame}
+
+\imageframe{image_pca_train}
+\imageframe{image_pca_test}
+\begin{frame}{Classification results, PCA}
+    \% of successful emotion prediction out of 258 test faces
+
+    {\bf kNN}:
+    \begin{itemize}
+        \item k=1: 30.2\%
+        \item k=2: 26.0\%
+        \item k=4: 28.3\%
+        \item k=6: 30.2\%
+        \item k=9: 33.7\%
+    \end{itemize}
+
+    {\bf SVM}:
+
+    \begin{itemize}
+            \item kernel: rbf: 19.4\%
+    \end{itemize}
+\end{frame}
+
+\imageframe{image_lda_train}
+
+\begin{frame}{Linear Discriminant Analysis overfitting}
+
+    LDA requires the number of samples per class $n$ (\ie number of faces per
+    emotion, 50 here) to be much larger than the number of features $p$ (in our case,
+    $112\times 112$ px $= 12544$!)
+
+    Rule of thumb: $n > 3\cdot p$
+\end{frame}
+
+\imageframe{image_lda_test}
+
+\begin{frame}{}
+
+    Idea: first, reduce dimensionality (using PCA for instance), and then,
+    perform a LDA on the lower dimensionality representation.
+\end{frame}
+
+
+\imageframe{image_pca_lda_train}
+\imageframe{image_pca_lda_test}
+
+\begin{frame}{Classification results, PCA followed with LDA}
+    \% of successful emotion prediction out of 258 test faces
+
+    {\bf kNN}:
+    \begin{itemize}
+        \item k=1: 39.5\%
+        \item k=2: 33.3\%
+        \item k=4: 36.4\%
+        \item k=6: 35.7\%
+        \item k=9: 36.8\%
+    \end{itemize}
+
+    {\bf SVM}:
+
+    \begin{itemize}
+        \item kernel: rbf: 41.9\%
+        \item kernel: linear: 38.4\%
+        \item kernel: poly: 26.0\%
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Classification results, Action Units}
+    
+
+    \begin{center}
+        {\bf What about classifying using the 17 action units directly?}
+    \end{center}
+
+
+    \% of successful emotion prediction out of 258 test faces
+    \begin{columns}
+        \begin{column}{0.4\linewidth}
+    {\bf kNN}:
+    \begin{itemize}
+        \item k=1: 46.9\%
+        \item k=2: 42.2\%
+        \item k=4: 50.8\%
+        \item k=6: 46.1\%
+        \item k=9: 52.3\%
+    \end{itemize}
+
+    {\bf SVM}:
+
+    \begin{itemize}
+        \item kernel: rbf: 48.8\%
+        \item kernel: linear: 52.3\%
+        \item kernel: poly: 38.0\%
+    \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\linewidth}
+            \begin{pythoncode}
+from numpy import genfromtxt
+from sklearn import neighbors, svm
+
+csv_train = genfromtxt('training.csv')
+training = csv_train[:,1:-1]
+training_categories = csv_train[:,0]
+
+csv_test = genfromtxt('testing.csv')
+testing = csv_test[:,1:-1]
+testing_categories = csv_test[:,0]
+
+clf = neighbors.KNeighborsClassifier(k)
+clf.fit(training, training_categories)
+knns_predictions = clf.predict(testing)
+
+clf = svm.SVC(kernel=kernel)
+clf.fit(training, training_categories)
+svm_predictions = clf.predict(testing)
+
+            \end{pythoncode}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+
+\imageframe{au_pca_train}
+\imageframe{au_pca_test}
+\begin{frame}{Classification results, PCA  on AUs}
+
+    Classification on the first 5 eigen components.
+
+    \% of successful emotion prediction out of 258 test faces
+    {\bf kNN}:
+    \begin{itemize}
+        \item k=1: 45.7\%
+        \item k=2: 39.1\%
+        \item k=4: 45.0\%
+        \item k=6: 43.8\%
+        \item k=9: 47.3\%
+    \end{itemize}
+
+    {\bf SVM}:
+
+    \begin{itemize}
+        \item kernel: rbf: 50.8\%
+        \item kernel: linear: 47.7\%
+        \item kernel: poly: 39.9\%
+    \end{itemize}
+
+    $\Rightarrow$ no improvement
+\end{frame}
+
+\imageframe{au_lda_train}
+\imageframe{au_lda_test}
+\begin{frame}{Classification results, LDA  on AUs}
+
+    \only<1>{
+    Classification on the first 5 components.
+
+    \% of successful emotion prediction out of 258 test faces
+
+
+    {\bf kNN}:
+    \begin{itemize}
+        \item k=1: 45.7\%
+        \item k=2: 43.0\%
+        \item k=4: 45.7\%
+        \item k=6: 46.9\%
+        \item k=9: 52.3\%
+    \end{itemize}
+
+    {\bf SVM}:
+
+    \begin{itemize}
+        \item kernel: rbf: 53.1\%
+        \item kernel: linear: 51.9\%
+        \item kernel: poly: 40.3\%
+    \end{itemize}
+
+    $\Rightarrow$ same as direct, better than PCA
+    }
+
+    \only<2>{
+        With only {\bf 2 components}:
+
+    {\bf kNN}:
+    \begin{itemize}
+        \item k=1: 43.4\%
+        \item k=2: 42.6\%
+        \item k=4: 49.2\%
+        \item k=6: 51.2\%
+        \item k=9: 49.2\%
+    \end{itemize}
+
+    {\bf SVM}:
+
+    \begin{itemize}
+        \item kernel: rbf: 53.9\%
+        \item kernel: linear: 48.8\%
+        \item kernel: poly: 39.9\%
+    \end{itemize}
+
+    $\Rightarrow$ {\bf 2 values, extracted from the faces, are sufficient to
+    recognise an emotion $\approx 54$\% of the time.}
+    }
+
+\end{frame}
+
+\begin{frame}{How to improve it further?}
+
+    \begin{center}
+        Ideas?
+    \end{center}
+
+    \begin{itemize}
+        \item better dataset (wider range of facial expressions)
+        \item larger dataset
+        \item use the facial landmark directly?
+        \item different classifier $\rightarrow$ neural network (deep or not)?
+    \end{itemize}
+
+\end{frame}
+
+
 \section{Generating emotional responses}
 
 \imageframe{wall-e}
