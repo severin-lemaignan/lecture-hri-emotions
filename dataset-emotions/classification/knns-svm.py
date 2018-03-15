@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import genfromtxt
 import matplotlib.pyplot as plt
-from util import plot_embedding
+from util import plot_embedding, plot_confusion_matrix
 
 emotions=["fear","happiness","anger","surprise","sadness","disgust"]
 
@@ -196,6 +196,20 @@ for kernel in ['rbf','linear','poly']:
             correct_prediction += 1
     print("SVM + LDA, kernel: %s: %.1f%% successful prediction out of %d test faces" % (kernel, correct_prediction * 100./len(predictions), len(predictions)))
 
+#####################################################################################
+#####################################################################################
+## Confusion matrix
+
+from sklearn.metrics import confusion_matrix
+
+
+clf = svm.SVC(kernel='rbf', gamma=gamma, C=C, degree=degree)
+clf.fit(training_lda, categories)
+predictions = clf.predict(testing_lda)
+
+cnf_matrix = confusion_matrix(testing_categories, predictions)
+plot_confusion_matrix(cnf_matrix, classes=emotions,
+                      title='Confusion matrix for a RBF SVM, after performing a LDA on AUs')
 
 
 plt.show()

@@ -5,9 +5,8 @@ import csv
 
 from sklearn.decomposition import PCA
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.manifold import TSNE
 
-from util import read_image, plot_gallery, plot_embedding
+from util import read_image, plot_gallery, plot_embedding, plot_confusion_matrix
 
 PREFIX="../" # to the root of the dataset
 
@@ -155,6 +154,22 @@ for kernel in ['rbf','linear','poly']:
         if int(predictions[i]) == int(testing_categories[i]):
             correct_prediction += 1
     print("PCA+LDA SVM, kernel: %s: %.1f%% successful prediction out of %d test faces" % (kernel, correct_prediction * 100./len(predictions), len(predictions)))
+
+#####################################################################################
+#####################################################################################
+## Confusion matrix
+
+from sklearn.metrics import confusion_matrix
+emotions=["fear","happiness","anger","surprise","sadness","disgust"]
+
+
+clf = svm.SVC(kernel='rbf', gamma=gamma, C=C, degree=degree)
+clf.fit(lda_pca_training_images, training_categories)
+predictions = clf.predict(lda_pca_testing_images)
+
+cnf_matrix = confusion_matrix(testing_categories, predictions)
+plot_confusion_matrix(cnf_matrix, classes=emotions,
+                      title='Confusion matrix for a RBF SVM, after performing a PCA + LDA on faces')
 
 
 
