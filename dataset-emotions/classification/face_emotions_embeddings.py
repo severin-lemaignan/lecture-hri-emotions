@@ -168,7 +168,7 @@ clf.fit(lda_pca_training_images, training_categories)
 predictions = clf.predict(lda_pca_testing_images)
 
 cnf_matrix = confusion_matrix(testing_categories, predictions)
-plot_confusion_matrix(cnf_matrix, classes=emotions,
+plot_confusion_matrix(cnf_matrix, classes=emotions, normalize=True,
                       title='Confusion matrix for a RBF SVM, after performing a PCA + LDA on faces')
 
 
